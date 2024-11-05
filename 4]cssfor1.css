@@ -1,0 +1,44 @@
+/* Text Formatting */
+.text-format {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+/* Box Model */
+.box-model {
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+    margin: 20px;
+    border: 2px solid #000;
+    box-sizing: border-box;
+}
+
+/* Background and Border */
+.background-border {
+    background-color: #7ff07f;
+    border: 2px dashed #dd5757;
+    padding: 20px;
+    margin: 20px;
+}
+
+/* Flexbox */
+.flex-container {
+    display:  flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    background-color: #e0e0e0;
+}
+
+.flex-item {
+    background-color: #a988e6;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    flex: 1;
+    border: 2px solid #6096db;
+}

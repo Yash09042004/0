@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Example</title>
+   <style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: antiquewhite;
+
+        color: #333;
+    }
+
+    header, nav, main, footer {
+      
+        padding: 23px;
+        margin: 20px 10px;
+        margin-top: 20px;
+        background-color: #a54e4e;
+        border: 1px solid #fff;
+    }
+
+    header {
+        background-color: #af8936;
+        color: #fff;
+        text-align: center;
+        height: 100px;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        height: 30px;
+
+    }
+
+    nav ul li {
+        display: inline;
+        margin-right: 10px;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        
+    }
+
+    nav ul li a:hover {
+        color: #65ddcd;
+    }
+
+    main {
+        display: flex;
+        margin-right: 10px;
+        color: #65ddcd;
+    }
+
+    .content {
+        flex: 3;
+        margin-right: 10px;
+    }
+
+    .sidebar {
+        flex: 1;
+    }
+
+    .cards-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .card {
+        flex: 1;
+        background-color: rgba(151, 67, 207, 0.2);
+        color: #1f5bdd;
+        padding: 20px;
+        margin: 10px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        
+    }
+
+    .card h2 {
+        margin-top: 0;
+    }
+
+    footer {
+        text-align: center;
+        background-color: #af8936;
+        color: #fff;
+        padding: 10px;
+        margin-top: 20px;
+    }
+   </style>
+</head>
+<body>
+    <header>
+        <h1>Yash Patil</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#main">main</a></li>
+            <li><a href="#footer">footer</a></li>
+            <!-- <li><a href="#">Contact</a></li> -->
+        </ul>
+    </nav>
+    
+    <main id="main">
+        <section class="content">
+            <h2>Main Content</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque expedita asperiores ipsam veniam nulla omnis, neque debitis pariatur alias? Totam, placeat? Libero odio, itaque cupiditate labore facilis cum, numquam quidem dolor quaerat hic harum explicabo ab quia cumque delectus obcaecati soluta quibusdam possimus nisi ex, aut enim? Accusantium ratione sapiente molestias corrupti eius voluptate commodi labore debitis eos voluptatum! Voluptate similique, voluptatem quas quo ducimus consectetur quam minima error cumque iusto a nostrum reiciendis, odit hic pariatur? Dolor illum, eius fugit sit cum magni ab fuga deleniti doloribus soluta, est provident laboriosam nulla rerum placeat et atque, pariatur molestias debitis iusto incidunt ipsum? At porro corrupti voluptate necessitatibus aliquid exercitationem totam unde, accusamus deserunt, laudantium ipsa voluptas ipsam quaerat vitae reprehenderit corporis aspernatur aliquam repellat dignissimos! Voluptatem laboriosam ex distinctio aspernatur molestiae amet ipsa aperiam iusto optio corporis impedit quibusdam, recusandae consequuntur quis veniam et eos quia sapiente eligendi culpa doloribus adipisci earum consectetur ipsam? Cumque delectus doloremque molestiae hic quia quisquam id quis quae praesentium beatae. Eligendi quaerat iusto quidem voluptatibus iste repellendus quibusdam exercitationem aut reprehenderit aliquam porro, odit excepturi voluptate tempore, minus corrupti corporis doloremque officia, esse illo dolorum totam id quia. Dolor obcaecati repellendus deleniti a culpa ullam nobis cum iste minus ex voluptate quo porro quae ipsam corrupti autem animi necessitatibus, nisi doloremque, optio, alias earum neque. Ipsam dolore enim quia commodi ipsum illo, aliquid doloribus cupiditate fugiat esse ut pariatur molestias dolor maiores odio animi? Porro, aut. Beatae corporis dolorem ullam consequuntur hic nam, eius eligendi necessitatibus obcaecati magni saepe assumenda itaque minima veritatis laborum nemo ipsum soluta sunt quos et nesciunt fugiat vero quasi. Maiores error veniam aliquam, consequatur accusamus iste voluptates, animi assumenda, inventore ratione architecto rem eveniet non voluptatibus eligendi maxime praesentium explicabo. Excepturi quisquam voluptatum perspiciatis recusandae dolore minima voluptates ipsam officia aliquid, temporibus omnis mollitia incidunt quo, laudantium laboriosam assumenda! Eveniet libero, labore quasi delectus cum iusto reprehenderit aut, doloribus temporibus quaerat laborum recusandae perspiciatis! Beatae quam laudantium aut ullam eius, ea minus animi alias. Architecto nihil maiores quod eos sint mollitia cum eveniet aspernatur minus? Voluptatem optio perspiciatis vero nihil rerum natus. Aperiam quia nulla expedita aut quae, labore voluptates minima sapiente? Deleniti, impedit numquam mollitia ullam voluptates voluptatum quaerat et quo consequuntur sapiente modi. Pariatur, laudantium aut? Optio mollitia officia accusamus, sed iure magni dolore quis, excepturi nulla sint deleniti maxime odit ducimus dolorem provident. Excepturi, ullam.</p>
+        </section>
+        
+        <aside class="sidebar">
+            <h2>Sidebar</h2>
+            <p>This is the sidebar content.</p>
+        </aside>
+    </main>
+
+    <div class="cards-container">
+        <div class="card">
+            <h2>Card 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, expedita delectus minima nulla, modi vel tempore adipisci ex quae dicta sequi inventore quis beatae animi optio numquam dolorum impedit maxime quidem vitae aperiam repellat nobis reiciendis. Atque, temporibus nemo! Error recusandae, dolorem minus tenetur amet, tempora ab illo porro necessitatibus architecto id? Velit, voluptatibus cumque! Dolore earum suscipit at vel non asperiores, quaerat exercitationem quis delectus placeat provident, necessitatibus ullam. Delectus ducimus alias similique ipsa vel accusantium quas! Sapiente, dolorem eos dolores nisi hic obcaecati. Aperiam voluptas quaerat rem nobis enim exercitationem quidem impedit velit inventore, non recusandae blanditiis voluptates.</p>
+        </div>
+        <div class="card">
+            <h2>Card 2</h2>
+            <p>This is the Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed corrupti animi minima facilis similique optio. Dolor provident consequatur facilis recusandae eos maiores voluptatum voluptatem voluptatibus ducimus facere veritatis voluptate ea qui, reiciendis cumque est assumenda consequuntur necessitatibus alias minus praesentium dolorum consectetur laboriosam placeat. Itaque tempora velit sed, doloribus adipisci quo. Aut totam in quaerat iure, exercitationem aperiam vel odit. Voluptas nisi tenetur dolorem aut pariatur quae enim hic expedita, autem inventore aliquid porro repudiandae molestiae consequatur incidunt quaerat fuga corporis temporibus, earum animi maxime ad iusto? Sequi iste saepe quisquam, blanditiis excepturi quae omnis consequuntur corrupti facilis nisi incidunt.</p>
+        </div>
+        <div class="card">
+            <h2>Card 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut magnam eaque sunt quae eveniet voluptatibus minus, veniam, qui laborum quas autem doloremque quasi! Illum eligendi nisi, impedit delectus nostrum neque ullam ducimus odio culpa accusamus incidunt. Non error debitis minus dicta saepe repellendus, modi nam neque quisquam? Deleniti facere adipisci numquam eligendi reiciendis pariatur totam eos, voluptate quaerat? Quo fugiat veniam repudiandae libero possimus, ullam magni, exercitationem consectetur aspernatur debitis molestias repellat ut deserunt! Quas minus tempore pariatur consequatur maxime velit. Totam ipsam, quod recusandae veritatis rerum a sint asperiores iure voluptas praesentium beatae nobis, sed enim perferendis tenetur eveniet?</p>
+        </div>
+    </div>
+    
+    <footer id="footer">
+        <p>Website Footer</p>
+    </footer>
+</body>
+</html>

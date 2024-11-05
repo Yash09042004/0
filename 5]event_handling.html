@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script >
+        document.addEventListener('DOMContentLoaded',(event)=>{
+    const clickButton = document.getElementById('click');
+    const click = document.getElementById('clickmsg');
+
+    clickButton.addEventListener('click',()=>{
+        // clickmsg.textContent = 'Button Clicked'; 
+        alert('Button Clicked');
+    });
+
+    const mouseover = document.getElementById('mouseover');
+    const mouseovermsg = document.getElementById('mouseovermsg');
+
+    mouseover.addEventListener('mouseover',()=>{
+        mouseovermsg.textContent = 'Mouse Over Me';
+    }
+    );
+
+    const mouseout = document.getElementById('mouse-out');
+    const mouseoutmsg = document.getElementById('mouseoutmsg');
+
+    mouseout.addEventListener('mouseout',()=>{
+        mouseoutmsg.textContent = 'Mouse Out Me';
+    }
+    );
+
+    const keypress = document.getElementById('keypress');
+    const keypressmsg = document.getElementById('keypressmsg');
+
+    keypress.addEventListener('keypress',(event)=>{
+        keypressmsg.textContent = `You pressed : ${event.key}`;
+    })
+});
+    </script>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2 {
+    color: #444;
+}
+
+.box {
+    width: 200px;
+    height: 100px;
+    background-color: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+    </style>
+</head>
+<body>
+
+        <h1><b>Event Handling</b></h1>
+
+        <h2>Click Event</h2>
+        <button id="click">Click Me</button>
+        <p id = "clickmsg"></p>
+
+        <h2>Mouse Over Event</h2>
+        <button id="mouseover">Mouse Over Me</button>
+        <p id = "mouseovermsg"></p>
+
+        <h2>Mouse Out Event</h2>
+        <button id="mouse-out">Mouse Out Me</button>
+        <p id = "mouseoutmsg"></p>
+
+        <h2>Keypress Event</h2>
+   
+        <input type="text" id="keypress" placeholder="Type something">
+        <p id = "keypressmsg"></p>
+    
+</body>
+</html>

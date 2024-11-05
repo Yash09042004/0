@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form And UI</title>
+</head>
+<body>
+    <h1>Form and UI</h1>
+
+    <form action="/submit" method="post">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+            <fieldset>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last Name:</label>
+            <input type="'text" id="lname" name="lname"><br><br>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob"><br><br>
+            <label for="email" >Email:</label>
+
+
+            <input type="email" id="email" name="email">
+            <label for="gender">Gender:</label>
+            <input type="radio" id="gender" name="male">
+            <label for="male">Male</label>
+            <input type="radio" id="gender" name="female">
+            <label for="female">Female</label>
+
+            <label for="hobbies">Hobbies:</label><br>
+            <input type="checkbox" id="hobby1" name="hobbies" value="reading">
+            <label for="hobby1">Reading</label><br>
+            <input type="checkbox" id="hobby2" name="hobbies" value="traveling">
+            <label for="hobby2">Traveling</label><br>
+            <input type="checkbox" id="hobby3" name="hobbies" value="cooking">
+            <label for="hobby3">Cooking</label><br><br>
+            
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="India">India</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Sri Lanka">Sri Lanka</option>
+            </select>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+
+
+        </fieldset>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
